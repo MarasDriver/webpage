@@ -13,9 +13,9 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<Widget> screens = [
-    Container(child: ScreenHome()),
-    Container(child: CalculatorPage()),
-    Container(child: TodoPage())
+    Container(child: WelcomeScreen()),
+    Container(child: AboutPage()),
+    Container(child: ContactPage())
   ];
 
   int index = 0;
@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
                 child: MyTextWidget(
                   size: 20.0,
                   color: Colors.black,
-                  text: "Kliken Machen",
+                  text: "WelcomePage",
                 ),
                 onPressed: () {
                   setState(() {
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
                 child: MyTextWidget(
                   size: 20.0,
                   color: Colors.black,
-                  text: "Calculator",
+                  text: "About",
                 ),
                 onPressed: () {
                   setState(() {
@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
                 child: MyTextWidget(
                   size: 20.0,
                   color: Colors.black,
-                  text: "Lista zadań",
+                  text: "Contact",
                 ),
                 onPressed: () {
                   setState(() {
@@ -71,7 +71,7 @@ class _HomeState extends State<Home> {
           elevation: 0,
           backgroundColor: Colors.transparent,
           title: MyTextWidget(
-            text: "Launcher",
+            text: "WebPage",
             color: Colors.black,
             size: 20,
           ),
